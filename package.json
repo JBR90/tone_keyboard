@@ -1,0 +1,19 @@
+{
+  "name": "firstTone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.7.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {
+    "tone": "^14.7.58"
+  }
+}
