@@ -1,0 +1,190 @@
+<!-- dist/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tone.js with webpack</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="/src/NexusUI.js"></script>
+  </head>
+  <body>
+    <h1>keybaord</h1>
+    <div id="base">
+      <div class="container">
+        <div id="name">name</div>
+
+        <div class="osc-container">
+          <p>OSC1</p>
+          <div class="osc">
+            <div id="carousel-wrapper" class="carousel-wrapper">
+              <!-- <div class="carousel">
+                <img
+                  class="carousel__photo initial"
+                  src="images/sine-wave.png"
+                />
+                <img class="carousel__photo" src="images/sawtooth-wave.png" />
+                <img class="carousel__photo" src="images/square_wave.png" />
+                <img class="carousel__photo" src="images/triangle_wave.png" />
+
+                <div class="carousel-buttons">
+                  <button class="btn-osc-l"><</button>
+                  <button class="btn-osc-r">></button>
+                </div>
+              </div> -->
+            </div>
+
+            <div id="pitch-dial">
+             
+            </div>
+            <div id="fine-pitch-dial"></div>
+          </div>
+        </div>
+        <div>osc2</div>
+        <div>filter</div>
+        <div class="envelop-container">
+          <p class="section-label">OSC1 ADSR</p>
+          <div id="osc1Env" class="env-slider-container">
+            <section>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+                step="0.1"
+                class="input"
+                id="osc1-attack"
+              />
+            </section>
+            <section>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+                step="0.1"
+                class="input"
+                id="osc1-decay"
+              />
+              <!--               <label class="envelop-label">D</label> -->
+            </section>
+            <section>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="2"
+                step="0.1"
+                class="input"
+                id="osc1-sustain"
+              />
+              <!--               <label>S</label> -->
+            </section>
+            <section>
+              <input
+                type="range"
+                min="0.1"
+                max="50000"
+                value="1"
+                step="0.1"
+                class="input"
+                id= "osc1-release"
+              />
+              <!--               <label>R</label> -->
+            </section>
+            <p class="ev-label">A</p>
+            <p class="ev-label">D</p>
+            <p class="ev-label">S</p>
+            <p class="ev-label">R</p>
+          </div>
+        </div>
+        <div class="envelop-container">
+          <p class="section-label">OSC2 ADSR</p>
+          <div id="osc2Env" class="env-slider-container">
+            <section>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+                step="0.1"
+                class="input"
+                id="osc2-attack"
+              />
+            </section>
+            <section>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+                step="0.1"
+                class="input"
+                id="osc2-decay"
+              />
+              <!--               <label class="envelop-label">D</label> -->
+            </section>
+            <section>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="2"
+                step="0.1"
+                class="input"
+                id="osc2-sustain"
+              />
+              <!--               <label>S</label> -->
+            </section>
+            <section>
+              <input
+                type="range"
+                min="0.1"
+                max="50000"
+                value="1"
+                step="0.1"
+                class="input"
+                id="osc2-release"
+              />
+              <!--               <label>R</label> -->
+            </section>
+            <p class="ev-label">A</p>
+            <p class="ev-label">D</p>
+            <p class="ev-label">S</p>
+            <p class="ev-label">R</p>
+          </div>
+        </div>
+      </div>
+      <div id="keyboard">
+        <div id="130.81" class="key"></div>
+        <div id="Db3" class="black-key db"></div>
+        <div id="D3" class="key"></div>
+        <div id="E3" class="key"></div>
+        <div id="Eb3" class="black-key eb"></div>
+        <div id="F3" class="key"></div>
+        <div id="G3" class="key"></div>
+        <div id="Gb3" class="black-key gb"></div>
+        <div id="A3" class="key"></div>
+        <div id="Ab3" class="black-key ab"></div>
+        <div id="B3" class="key"></div>
+        <div id="Bb3" class="black-key bb"></div>
+        <div id="C4" class="key"></div>
+        <div id="D4" class="key"></div>
+        <div id="Db4" class="black-key db4"></div>
+        <div id="E4" class="key"></div>
+        <div id="Eb4" class="black-key eb4"></div>
+        <div id="F4" class="key"></div>
+
+        <div id="G4" class="key"></div>
+        <div id="Gb4" class="black-key gb4"></div>
+        <div id="A4" class="key"></div>
+        <div id="Ab4" class="black-key ab4"></div>
+        <div id="B4" class="key"></div>
+        <div id="B4" class="black-key bb4"></div>
+      </div>
+    </div>
+    <div id="content"></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
